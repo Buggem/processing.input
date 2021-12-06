@@ -1,0 +1,30 @@
+var keysHeld = "";
+
+
+
+String.prototype.replaceAll = function (stringToFind, stringToReplace) {
+    if (stringToFind === stringToReplace) return this;
+    var temp = this;
+    var index = temp.indexOf(stringToFind);
+		while (index != -1) {
+       temp = temp.replace(stringToFind, stringToReplace);
+       index = temp.indexOf(stringToFind);
+    }
+    return temp;
+};
+
+function isHeld(_k) {
+  return keysHeld.includes(_k.toUpperCase());
+}
+document.addEventListener('keydown', function () {
+  keysHeld += key;
+  // testing 
+	console.log(keysHeld);
+}
+);
+document.addEventListener('keyup', function () {
+  keysHeld = keysHeld.replaceAll(key, "");
+	// testing 
+	console.log(keysHeld);
+}
+);
