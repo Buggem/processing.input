@@ -29,7 +29,7 @@ document.addEventListener('keydown', function (e) {
 );
 document.addEventListener('keyup', function (e) {
   keysHeld = keysHeld.replaceAll(e.key.toUpperCase(), "");
-	if(keysHeld.length <= 0) { aKeyPressed = false }
+	if(keysHeld.length <= 0) { aKeyPressed = false; }
 	// testing 
 	//console.log(keysHeld);
 }
