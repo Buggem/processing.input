@@ -1,4 +1,6 @@
 var keysHeld = "";
+var theKey = "";
+var keysLog = "";
 var aKeyPressed = false;
 
 String.prototype.replaceAll = function (stringToFind, stringToReplace) {
@@ -16,6 +18,8 @@ function isHeld(_k) {
   return keysHeld.includes(_k.toUpperCase());
 }
 document.addEventListener('keydown', function (e) {
+	theKey = e.key.toUpperCase();
+	keysLog+= e.key.toUpperCase();
 	if(isHeld(e.key)) {
 		return;
 	}
@@ -28,6 +32,7 @@ document.addEventListener('keydown', function (e) {
 }
 );
 document.addEventListener('keyup', function (e) {
+  theKey = e.key.toUpperCase();
   keysHeld = keysHeld.replaceAll(e.key.toUpperCase(), "");
 	if(keysHeld.length <= 0) { aKeyPressed = false; }
 	// testing 
