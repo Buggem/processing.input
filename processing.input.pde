@@ -1,4 +1,5 @@
-String keysHeld = "", keysLog = "", theKey = "";
+String keysHeld, keysLog;
+char theKey;
 int coded = CODED; // because caps are annoying
 boolean aKeyPressed = false;
 
