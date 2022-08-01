@@ -7,8 +7,8 @@ boolean isHeld(char _k) {
   return keysHeld.contains(str(_k));
 }
 void keyPressed() {
-  keysLog+=key;
-  theKey=key;
+  keysLog += key;
+  theKey = key;
   aKeyPressed = true;
   if(key != coded) {
     keysHeld += str(key);
@@ -16,7 +16,7 @@ void keyPressed() {
   // testing println(keysHeld);
 }
 void keyReleased() {
-  theKey=key;
+  theKey = key;
   if(keysHeld.length() <= 0) {
     aKeyPressed = false;
   }
