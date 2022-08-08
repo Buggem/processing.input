@@ -1,40 +1,40 @@
-var keysHeld = "";
-var theKey = "";
-var keysLog = "";
-var aKeyPressed = false;
+window.keysHeld = "";
+window.theKey = "";
+window.keysLog = "";
+window.aKeyPressed = false;
 
 String.prototype.replaceAll = function (stringToFind, stringToReplace) {
     if (stringToFind === stringToReplace) return this;
     var temp = this;
     var index = temp.indexOf(stringToFind);
-		while (index != -1) {
+    while (index != -1) {
        temp = temp.replace(stringToFind, stringToReplace);
        index = temp.indexOf(stringToFind);
     }
     return temp;
 };
 
-function isHeld(_k) {
-  return keysHeld.includes(_k);
+window.isHeld = function(_k) {
+	return window.keysHeld.includes(_k);
 }
 document.addEventListener('keydown', function (e) {
-	theKey = e.key;
-	keysLog+= e.key;
+	window.theKey = e.key;
+	window.keysLog += e.key;
 	if(isHeld(e.key)) {
 		return;
 	}
-	aKeyPressed = true;
-  keysHeld = keysHeld.replaceAll(e.key, "");
-
-  keysHeld += e.key;
-  // testing 
+	window.aKeyPressed = true;
+	window.keysHeld = window.keysHeld.replaceAll(e.key, "");
+	
+	window.keysHeld += e.key;
+	// testing 
 	//console.log(keysHeld);
 }
 );
 document.addEventListener('keyup', function (e) {
-  theKey = e.key;
-  keysHeld = keysHeld.replaceAll(e.key, "");
-	if(keysHeld.length <= 0) { aKeyPressed = false; }
+	window.theKey = e.key;
+	window.keysHeld = window.keysHeld.replaceAll(e.key, "");
+	if(window.keysHeld.length <= 0) { window.aKeyPressed = false; }
 	// testing 
 	//console.log(keysHeld);
 }
