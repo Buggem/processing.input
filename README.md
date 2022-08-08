@@ -1,5 +1,5 @@
 # processing.input
-A simple p5.js add-on to let you use input. Just simply add to your code!
+A simple p5.js and Processing add-on to let you use input. Just simply add to your code!
 
 # Options
 
@@ -26,5 +26,7 @@ Copy and paste the processing.input.pde file to your code.
 
 # Demo
 
-There is a demonstration of p5.input.js and how it works here: <a href="https://openprocessing.org/sketch/1383233">https://openprocessing.org/sketch/1383233</a>
+There is a demonstration of p5.input.js and how it works [here](https://openprocessing.org/sketch/1383233).
 
+
+It is also shown on the [p5js libraries site](https://p5js.org/libraries/).
