@@ -16,7 +16,7 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
 
 window.isHeld = function(_k) {
 	return window.keysHeld.includes(_k);
-}
+};
 document.addEventListener('keydown', function (e) {
 	window.theKey = e.key;
 	window.keysLog += e.key;
