@@ -28,7 +28,7 @@ document.addEventListener('keydown', function (e) {
 	
 	window.keysHeld += e.key;
 	// testing 
-	//console.log(keysHeld);
+	// console.log(window.keysHeld);
 }
 );
 document.addEventListener('keyup', function (e) {
