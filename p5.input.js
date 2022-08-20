@@ -6,7 +6,9 @@ window.aKeyPressed = false;
 String.prototype.replaceAll = function (stringToFind, stringToReplace) {
     if (stringToFind === stringToReplace) return this;
     var temp = this;
-    temp = (((stringToFind.length < 1) && temp.includes(stringToFind)) ? (temp.split(stringToFind).join(stringToReplace)) : (temp))
+    // debug line
+    // console.log((stringToFind.length > 0) + " and " + temp.includes(stringToFind))
+    temp = (((stringToFind.length > 0) && temp.includes(stringToFind)) ? (temp.split(stringToFind).join(stringToReplace)) : (temp))
     return temp;
 };
 
