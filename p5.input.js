@@ -15,8 +15,8 @@ window.aKeyPressed = false;
 window.isHeld = function(_k) {
 	return window.keysHeld.includes(_k);
 };
-window.getKeysHeldAsString = function() {
-	return keysHeld.join('');	
+window.getKeysHeldAsString = function(d) {
+	return keysHeld.join(d);	
 };
 document.addEventListener('keydown', function (e) {
 	window.theKey = e.key;
