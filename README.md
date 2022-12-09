@@ -1,16 +1,16 @@
 # processing.input
 A simple p5.js and Processing add-on to let you use input. Just simply add to your code!
 
-# Options
+# Variables added
 
-```keysHeld``` is a string (an array in P5) with all the keys pressed stored in it.
-```aKeyPressed``` is detecting when a key is pressed (just a merge of keyPressed in processing and keyIsPressed in p5.js basically so your projects are easier to convert to p5.js/processing)
-```theKey``` is the last key pressed
-```keysLog``` is a string containing all keys ever pressed.
+- ```keysHeld``` is a string (an array in P5) with all the keys pressed stored in it.
+- ```aKeyPressed``` is detecting when a key is pressed (just a merge of keyPressed in processing and keyIsPressed in p5.js basically so your projects are easier to convert to p5.js/processing)
+- ```theKey``` is the last key pressed.
+- ```keysLog``` is a string containing all keys ever pressed.
 
 # Add it
 
-# p5.js
+## p5.js
 
 Download the p5.input.js file and add
 
@@ -20,7 +20,7 @@ Download the p5.input.js file and add
 
 to your code.
 
-# Processing (as of version 4)
+## Processing (as of version 4)
 
 Copy and paste the processing.input.pde file to your code.
 
