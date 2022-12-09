@@ -1,6 +1,6 @@
 window.keysHeld = [];
 window.theKey = "";
-window.keysLog = "";
+window.keysLog = [];
 window.aKeyPressed = false;
 
 /*String.prototype.replaceAll = function (stringToFind, stringToReplace) {
@@ -20,7 +20,7 @@ window.getKeysHeldAsString = function(d) {
 };
 document.addEventListener('keydown', function (e) {
 	window.theKey = e.key;
-	window.keysLog += e.key;
+	window.keysLog.push(e.key);
 	if(isHeld(e.key)) {
 		return;
 	}
