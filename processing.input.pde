@@ -1,4 +1,5 @@
-String keysHeld, keysLog;
+String keysLog;
+ArrayList<String> keysHeld = new ArrayList<String>();
 char theKey;
 int coded = CODED; // because caps are annoying
 boolean aKeyPressed = false;
@@ -11,7 +12,7 @@ void keyPressed() {
   theKey = key;
   aKeyPressed = true;
   if(key != coded) {
-    keysHeld += str(key);
+    keysHeld.add(str(key));
   }
   // testing println(keysHeld);
 }
@@ -21,6 +22,6 @@ void keyReleased() {
     aKeyPressed = false;
   }
   if(key != coded) {
-    keysHeld = keysHeld.replace(str(key), "");
+    keysHeld = keysHeld.remove(str(key));
   }
 }
