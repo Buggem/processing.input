@@ -3,7 +3,7 @@ A simple p5.js and Processing add-on to let you use input. Just simply add to yo
 
 # Variables added
 
-- ```keysHeld``` is a string (an array in P5) with all the keys pressed stored in it.
+- ```keysHeld``` is a array (an ArrayList in Processing) with all the keys pressed stored in it.
 - ```aKeyPressed``` is detecting when a key is pressed (just a merge of keyPressed in processing and keyIsPressed in p5.js basically so your projects are easier to convert to p5.js/processing)
 - ```theKey``` is the last key pressed.
 - ```keysLog``` is a string containing all keys ever pressed.
