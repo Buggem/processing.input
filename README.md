@@ -27,4 +27,4 @@ Copy and paste the processing.input.pde file to your code.
 # Demo
 
 There is a demonstration of p5.input.js and how it works [here](https://openprocessing.org/sketch/1383233), as well as a demonstration using a *emulated* Java/Processing Environment [here](https://openprocessing.org/sketch/2088176).
-It is also shown on the [p5js libraries site](https://p5js.org/libraries/).
+It is also shown on the [p5js libraries site](https://archive.p5js.org/libraries/).
